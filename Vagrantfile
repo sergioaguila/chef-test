@@ -13,11 +13,11 @@ Vagrant.configure(2) do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "learningchef/centos65"
+  config.vm.network "forwarded_port", guest: 8011, host: 8011
 
   config.vm.provision "chef_solo" do |chef|
     chef.roles_path = "roles"
     chef.add_role("my-tomcat-server")
-    config.vm.network "forwarded_port", guest: 8010, host: 8085
   end
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs

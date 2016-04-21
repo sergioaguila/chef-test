@@ -1,23 +1,23 @@
-my-tomcat Cookbook
+my-tom
+cat Cookbook
 ==================
-TODO: Enter the cookbook description here.
-
-e.g.
-This cookbook makes your favorite breakfast sandwich.
+This is a tomcat wrapper cookbook. The idea is to leverage the java and tomcat comunity coookbooks to override and configure particular settings.
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
-
-e.g.
-#### packages
-- `toaster` - my-tomcat needs toaster to brown your bagel.
+Depends on java and tomcat cookbook
 
 Attributes
 ----------
-TODO: List you cookbook attributes here.
 
-e.g.
+There are several attributes by default, the most importants are:
+
+['tomcat']['max_mem'] = '-Xmx2048m'
+['tomcat']['jmx_monitor_password'] = 'tacitmonitor' -> password for monitorRole user
+['tomcat']['jmx_control_password'] = 'tacitcontrol' -> password for controlRole user
+['tomcat']['jmx_remote_port'] = '8011'
+
+
 #### my-tomcat::default
 <table>
   <tr>
@@ -37,9 +37,7 @@ e.g.
 Usage
 -----
 #### my-tomcat::default
-TODO: Write usage instructions for each cookbook.
 
-e.g.
 Just include `my-tomcat` in your node's `run_list`:
 
 ```json
@@ -65,4 +63,4 @@ e.g.
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Authors: Sergio Aguila
