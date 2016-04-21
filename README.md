@@ -1,6 +1,6 @@
 # chef-test
 
-This is a test repository which contains a Vagrant file and a chef tomcat wrapper cookbook.
+This is a test repository which contains a Vagrant file and a chef tomcat wrapper cookbook called my-tomcat (check it's README file for details).
 
 Usage:
 
