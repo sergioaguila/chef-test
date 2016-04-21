@@ -1,0 +1,11 @@
+{
+	"name" : "my-tomcat-server",
+	"default_attributes" : {
+		"apache" : {
+			"greeting" : "Webinar"
+		}
+	},
+	"run_list" : [
+		"recipe[my-tomcat]"
+	]
+}
