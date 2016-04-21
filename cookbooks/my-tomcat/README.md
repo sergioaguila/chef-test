@@ -18,6 +18,12 @@ There are several attributes by default, the most importants are:
 ['tomcat']['jmx_remote_port'] = '8011'
 ```
 
+Please take a look at the full list of attributes which can be modified in:
+
+```
+chef-test/cookbooks/my-tomcat/attributes/default.rb
+``
+
 Usage
 -----
 #### my-tomcat::default
