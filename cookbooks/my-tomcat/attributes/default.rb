@@ -2,6 +2,8 @@
 default['tomcat']['max_mem'] = '-Xmx2048m'
 default['tomcat']['jmx_monitor_password'] = 'tacitmonitor'
 default['tomcat']['jmx_control_password'] = 'tacitcontrol'
+default['tomcat']['jmx_monitor_user'] = 'monitorRole'
+default['tomcat']['jmx_control_user'] = 'controlRole'
 default['tomcat']['jmx_remote_port'] = '8011'
 default['tomcat']['service_name'] = 'my-tomcat'
 

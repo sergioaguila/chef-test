@@ -1,4 +1,4 @@
-monitorRole   readonly
-controlRole   readwrite \
+<%= node['tomcat']['jmx_monitor_user'] %>   readonly
+<%= node['tomcat']['jmx_control_user'] %>   readwrite \
               create javax.management.monitor.*,javax.management.timer.* \
               unregister

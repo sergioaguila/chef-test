@@ -3,6 +3,7 @@
 	"default_attributes" : {
 		"tomcat" : {
 			"max_mem" : "-Xmx2048m",
+			"jmx_monitor_user" : "monitorRole",
 			"jmx_monitor_password" : "tacitmonitor"
 		}
 	},
