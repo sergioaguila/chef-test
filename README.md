@@ -28,3 +28,13 @@ Tomcat:
 ```
 Max memory: 2048m
 ```
+
+For JMX testing, run jconsole in your workstation and complete the following parameters:
+
+```
+Remote process: localhost:8011
+Username: monitorRole
+Password: tacitmonitor
+```
+
+Please ignore the ssl error and continue with an insecure connection
